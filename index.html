@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Tablero de Reportes</title>
+  <!-- with this metadata Google's spiders can find our page more quickly -->
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +15,13 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- boostrap5 CSS style  from https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
   <!-- Place favicon.ico in the root directory -->
+  <!-- here we put our CSS styles-->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -25,7 +32,25 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!--
+     with h1, h2, h3 we can create titles, subtitles and sub-subtitles {it's not recommended practice} 
+     is better use class h1, h2 and furthermore to simulate this behavior in <p> etiquettes 
+  -->
+  <!-- also we can create class to add a custom style in a etiquette -->
+  <h1 class="estilo-titulo"> Tabla de Reportes</h1>
+  <p class="h3">Campo para ingreso de datos</p>
+
+  <!-- add a new imput. with id we can reffer to this input-->
+  <label for="name"> Nombre:</label>
+  <input type="text" id="name" name="nombre">
+
+  <!-- we can send data with a button -->
+  <button type="reset submit">Enviar</button>
+
+
+
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
@@ -35,6 +60,7 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
+
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
