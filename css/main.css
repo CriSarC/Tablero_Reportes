@@ -263,9 +263,14 @@ textarea {
 
 /* to create a new class --> . and name of the class */
 .estilo-titulo{
-  font-family: 'Dosis', sans-serif;
+
+    font-family: 'Dosis', sans-serif;
     font-size: 3rem;
     text-align: center;
     color:#C2185b;
 }
 
+.estilo-input{
+  margin:5px;
+  border-radius: 5px;
+}

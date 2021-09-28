@@ -36,18 +36,29 @@
      with h1, h2, h3 we can create titles, subtitles and sub-subtitles {it's not recommended practice} 
      is better use class h1, h2 and furthermore to simulate this behavior in <p> etiquettes 
   -->
+  <form>
+    <div class="text-center">
   <!-- also we can create class to add a custom style in a etiquette -->
   <h1 class="estilo-titulo"> Tabla de Reportes</h1>
   <p class="h3">Campo para ingreso de datos</p>
 
   <!-- add a new imput. with id we can reffer to this input-->
   <label for="name"> Nombre:</label>
-  <input type="text" id="name" name="nombre">
+  <input type="text" id="name" name="nombre" class="estilo-input">
+  
+  <br>
+  <label for="password"> Contraseña:</label>
+  <input type="password" id="password" name="contraseña" class="estilo-input">
+  <div>
+    <button class="btn btn-outline-danger">Enviar</button>
+  </div>
+  
+  
 
   <!-- we can send data with a button -->
-  <button type="reset submit">Enviar</button>
-
-
+  
+    </div>
+</form>
 
 
 
